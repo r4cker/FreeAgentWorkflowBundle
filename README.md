@@ -40,7 +40,7 @@ Register the bundle with your kernel:
 // in AppKernel::registerBundles()
 $bundles = array(
     // ...
-    new Lexik\Bundle\WorkflowBundle\FreeAgentWorkflowBundle(),
+    new Lexik\Bundle\WorkflowBundle\LexikWorkflowBundle(),
     // ...
 );
 ```
@@ -66,7 +66,7 @@ And let's say that if the validation to reach the published step fail we will go
 
 ```yaml
 # app/config/config.yml
-free_agent_workflow:
+lexik_workflow:
     processes:
         post_publication:
             start: draft_created
